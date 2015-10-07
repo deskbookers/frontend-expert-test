@@ -25,4 +25,7 @@ For this assignment you need to make a page containing the following elements:
 
 It is up to you to decide which frameworks you want to use (or not). You could think of frameworks like Angular, jQuery, ReactJS, etc. It is up to you.
 
+As inspiration you can use this page: https://www.deskbookers.com/nl-nl/search?s=home-big&pid=ChIJVXealLU_xkcRja_At0z9AGY&q=Amsterdam&type=&lat=52.3702157&lng=4.895167900000001
+Your version doesn't need to be as extensive as this example.
+
 Make sure the code is clean and robust. This is more important than the amount of features!
