@@ -18,15 +18,11 @@ For this assignment you need to make a page containing the following elements:
 
 * A map (Google Maps for example) showing the items from the result
 * A list showing the items from the result with at least the following data visible:
-** The name of the space
-** The name of the venue (location)
-** The city where the space is located
-** Extra data you think is usefull to show aswell
+  * The name of the space
+  * The name of the venue (location)
+  * The city where the space is located
+  * Extra data you think is usefull to show aswell
 
 It is up to you to decide which frameworks you want to use (or not). You could think of frameworks like Angular, jQuery, ReactJS, etc. It is up to you.
 
 Make sure the code is clean and robust. This is more important than the amount of features!
-
-## Assignment 2: Under Construction
-
-More info will follow.
