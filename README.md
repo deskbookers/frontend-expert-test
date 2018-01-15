@@ -12,7 +12,7 @@ It is possible that these assignments don't work directly from your local hard d
 
 In this assignment you need to make an Ajax request and show the results on a web page. What you will be showing are search results of our search page. Because of limited time you will only show the results. You don't have to make the search form or filters.
 
-The data for the search results can be found as JSON from the URL: https://www.deskbookers.com/nl-nl/sajax.json?q=Amsterdam&type=-&people=any&favorite=0&pid=&sw=52.293753%2C4.634942&ne=52.455562%2C5.162286&ids=17201%2C19640%2C13692%2C13691%2C12136%2C17938%2C15292%2C14886%2C14885%2C14884%2C14883%2C15730%2C15353%2C15351%2C15330%2C15080%2C17290%2C15454%2C15451%2C15379
+The data for the search results can be found as JSON from the URL: `https://www.deskbookers.com/nl-nl/search/ajax.json?q=<text>&bounds=<north>|<east>|<south>|<west>`. Both text and bounds are optional arguments.
 
 For this assignment you need to make a page containing the following elements:
 
@@ -23,9 +23,9 @@ For this assignment you need to make a page containing the following elements:
   * The city where the space is located
   * Extra data you think is usefull to show aswell
 
-It is up to you to decide which frameworks you want to use (or not). You could think of frameworks like Angular, jQuery, ReactJS, etc. It is up to you.
+It is up to you to decide which frameworks you want to use (or not). You could think of frameworks like ReactJS, Angular, etc. It is up to you.
 
-As inspiration you can use this page: https://www.deskbookers.com/nl-nl/search?s=home-big&pid=ChIJVXealLU_xkcRja_At0z9AGY&q=Amsterdam&type=&lat=52.3702157&lng=4.895167900000001
+As inspiration you can use this page: https://www.deskbookers.com/nl-nl/explore?q=amsterdam
 Your version doesn't need to be as extensive as this example.
 
 Make sure the code is clean and robust. This is more important than the amount of features!
