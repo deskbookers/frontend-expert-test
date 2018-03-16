@@ -12,7 +12,7 @@ It is possible that these assignments don't work directly from your local hard d
 
 In this assignment you need to make an Ajax request and show the results on a web page. What you will be showing are search results of our search page. Because of limited time you will only show the results. You don't have to make the search form or filters.
 
-The data for the search results can be found as JSON from the URL: `https://www.deskbookers.com/nl-nl/search/ajax.json?q=<text>&bounds=<north>|<east>|<south>|<west>`. Both text and bounds are optional arguments.
+The data for the search results can be found as JSON from the URL: `https://www.deskbookers.com/nl-nl/explore/ajax.json?q=<text>&bounds=<north>|<east>|<south>|<west>`. Both text and bounds are optional arguments.
 
 For this assignment you need to make a page containing the following elements:
 
