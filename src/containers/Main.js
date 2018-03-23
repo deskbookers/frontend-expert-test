@@ -1,6 +1,13 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
+
+
 import PropTypes from 'prop-types'
+
+//components
+import FirstMap from '../components/map'
+
+//styles
 import Paper from 'material-ui/Paper'
 
 const navStyle = {
@@ -23,7 +30,9 @@ const sideBarStyle = {
 }
 
 const mapStyle = {
-  width: '100%',
+  position: 'fixed',
+  width: '10rem',
+  height: '10rem',
   backgroundColor: 'lightBlue'
 }
 
@@ -32,17 +41,9 @@ class Main extends PureComponent {
   render() {
     return(
       <div>
-        <div style={ navStyle }>
-        </div>
-        <div>
-
-            <div style={ sideBarStyle }>
-            </div>
-
-            <div style={ mapStyle }>
-            </div>
-
-        </div>
+        <div style={ navStyle }></div>
+        <div style={ sideBarStyle }></div>
+        <FirstMap style={ mapStyle }/>
       </div>
     )
   }
