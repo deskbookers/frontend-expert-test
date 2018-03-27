@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+/* @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+
+} */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  background-color: salmon;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  background-color: lightBlue;
 }

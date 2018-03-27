@@ -19,7 +19,7 @@ For this assignment you need to make a page containing the following elements:
 * A map (Google Maps for example) showing the items from the result
 * A list showing the items from the result with at least the following data visible:
   * The name of the space
-  * The name of the venue (location)
+  * The name of the office (location)
   * The city where the space is located
   * Extra data you think is usefull to show aswell
 
