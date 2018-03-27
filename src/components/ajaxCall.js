@@ -34,7 +34,6 @@ class AjaxCall extends React.Component {
     return this.state.offices.map((office, index) => {
       return(
         <tr key={office.id}>
-          <td>{ office.id }</td>
           <td>{ office.name}</td>
           <td>{ office.location_name}</td>
           <td>{ office.address}</td>
@@ -57,14 +56,13 @@ class AjaxCall extends React.Component {
       return (
         <div>
           <div>
-            Sidebar
+
           </div>
             <div>
-              <h3>Got my data in :) </h3>
+              <h2 style={{ textAlign : 'center '}}>Search resulst</h2>
                 <table className="table">
                   <thead>
                     <tr>
-                    <th scope="col">id</th>
                       <th scope="col">Naam</th>
                             <th scope="col">Locatie Naam</th>
                               <th scope="col">Adres</th>

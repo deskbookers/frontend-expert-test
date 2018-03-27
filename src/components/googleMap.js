@@ -5,7 +5,8 @@ import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 const googleMapStyle = {
   width: '59.5%',
   height: '98%',
-  position: 'fixed'
+  position: 'fixed',
+  backgroundColor: '393A73'
 }
 
 class GoogleMap extends PureComponent {
@@ -46,6 +47,7 @@ class GoogleMap extends PureComponent {
           key={ offices.id }
           title={ offices.location_name }
           name={ offices.name }
+          icon={ 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
           position={{ lat: offices.coordinate[0], lng: offices.coordinate[1] }}
           />
       )
@@ -58,7 +60,7 @@ class GoogleMap extends PureComponent {
         <Map
             google={ this.props.google }
             initialCenter={{ lat: 52.3702, lng: 4.8952 }}
-            zoom={11}
+            zoom={14}
             onClick={ this.onMapClicked }
             >
             { this.renderMarker() }
