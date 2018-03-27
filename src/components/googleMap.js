@@ -60,7 +60,7 @@ class GoogleMap extends PureComponent {
         <Map
             google={ this.props.google }
             initialCenter={{ lat: 52.3702, lng: 4.8952 }}
-            zoom={14}
+            zoom={13}
             onClick={ this.onMapClicked }
             >
             { this.renderMarker() }
