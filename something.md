@@ -40,17 +40,17 @@ class GoogleMap extends PureComponent {
       )
   }
 
-  renderMarker(offices, index) {
-    if(!!this.state.offices) return null
-    return (
-      <Marker
-        key={ this.state.offices.id }
-        title={ this.state.offices.location_name }
-        name={ this.state.offices.name }
-        position={{lat: this.state.offices.coordinate[0], lng: this.state.offices.coordinate[1]}}
-      />
-    )
-  }
+renderMarker(offices, index) {
+  if(!!this.state.offices) return null
+  return (
+    <Marker
+      key={ this.state.offices.id }
+      title={ this.state.offices.location_name }
+      name={ this.state.offices.name }
+      position={{lat: this.state.offices.coordinate[0], lng: this.state.offices.coordinate[1]}}
+    />
+  )
+}
 
   render() {
 

@@ -14,10 +14,42 @@ class GoogleMap extends PureComponent {
     this.state = {
       error: null,
       isLoaded: false,
-      center: { lat: 52.3702, lng: 4.8952 },
-      zoom: 13,
       offices: [],
     }
+  }
+
+  componentDidMount() {
+    fetch("https://www.deskbookers.com/nl-nl/explore/ajax.json?q=amsterdam")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            offices: result.rows
+          })
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error
+          })
+        }
+      )
+  }
+
+  renderMarker(offices) {
+    console.log('halloooooo1', this.state.offices)
+    console.log('check id', this.state.offices)
+    return this.state.offices.map((offices, index) => {
+      return(
+        <Marker
+          key={ offices.id }
+          title={ offices.location_name }
+          name={ offices.name }
+          position={{ lat: offices.coordinate[0], lng: offices.coordinate[1] }}
+          />
+      )
+    })
   }
 
   render() {
@@ -25,14 +57,11 @@ class GoogleMap extends PureComponent {
       <div style={ googleMapStyle }>
         <Map
             google={ this.props.google }
-            initialCenter={ this.state.center }
-            zoom={this.state.zoom}
+            initialCenter={{ lat: 52.3702, lng: 4.8952 }}
+            zoom={11}
             onClick={ this.onMapClicked }
             >
-            <Marker
-              title={'Darrrling'}
-              name={'MyHome'}
-              position={{lat: 52.3421885, lng: 4.9095058}} />
+            { this.renderMarker() }
         </Map>
       </div>
     )

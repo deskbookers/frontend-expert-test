@@ -36,8 +36,6 @@ class AjaxCall extends React.Component {
         <tr key={office.id}>
           <td>{ office.id }</td>
           <td>{ office.name}</td>
-          <td>{ office.coordinate[0]}</td>
-          <td>{ office.coordinate[1]}</td>
           <td>{ office.location_name}</td>
           <td>{ office.address}</td>
           <td> &euro;{ office.hour_price} /uur</td>
@@ -67,10 +65,8 @@ class AjaxCall extends React.Component {
                   <thead>
                     <tr>
                     <th scope="col">id</th>
-                      <th scope="col">Name</th>
-                        <th scope="col">Lat</th>
-                          <th scope="col">Lng</th>
-                            <th scope="col">Location Name</th>
+                      <th scope="col">Naam</th>
+                            <th scope="col">Locatie Naam</th>
                               <th scope="col">Adres</th>
                                 <th scope="col">p.p.u.</th>
                                   <th scope="col">p.p.d.</th>
