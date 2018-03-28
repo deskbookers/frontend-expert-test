@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-/* @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
-
-} */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
     box-sizing: border-box;
@@ -13,5 +9,5 @@ body {
   margin: 0;
   padding: 0;
   background-color: #393A73;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }

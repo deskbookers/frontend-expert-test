@@ -1,28 +1,33 @@
 import React, { PureComponent } from 'react'
-import { connect } from 'react-redux'
-
-import PropTypes from 'prop-types'
-
 //components
 import GoogleMap from '../components/googleMap'
-import AjaxCall from '../components/ajaxCall'
-
-//styles
+import SearchResults from '../components/searchResults'
+//images
+import Logo from '../images/logo.svg'
+//styling
 import './Main.css'
 
 class Main extends PureComponent {
 
   render() {
     return(
+      <div>
+      <div className="nav">
+        <div className="row">
+          <div className="logo">
+        <img src={Logo} width="291" height="50" alt="DeskbookersLogo" />
+      </div>
+    </div>
+      </div>
       <div className="container">
-        <div className="nav">
-          <AjaxCall />
+        <div className="side">
+          <SearchResults />
         </div>
-
-        <div index="123" className="map">
+        <div className="map">
           <GoogleMap />
         </div>
       </div>
+    </div>
     )
   }
 }
