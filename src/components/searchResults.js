@@ -52,7 +52,7 @@ class searchResult extends PureComponent {
     if (error) {
       return <div>Error: {error.message}</div>
     } else if (!isLoaded) {
-      return <div>Loading...</div>
+      return <div><br />Loading...</div>
     } else {
       return (
           <div>
